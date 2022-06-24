@@ -7,17 +7,40 @@
     <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Artificial Intelegence</title>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    </script>
 </head>
 <body>
     <h1 style="font-size: xxx-large; font-weight: bold;font-family: Arial, Helvetica, sans-serif;">Top Technology Trends</h1>
-    <strong>
-        <ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: black;">
-           <li style="float: left;"><a href="index.html" style="display: block;color: white;text-align: center;padding: 16px;text-decoration: none;"><img src="Images/hm.jpg" style="width: 25px;" alt="home"></a></li>
-           <li style="float: left;padding-top: 3px;font-size: 20px;"><a href="ai.html" style="display: block;color: white;text-align: center;padding: 16px;text-decoration: none;">Artificial Intelligence</a></li>
-           <li style="float: left;padding-top: 3px;font-size: 20px;"><a href="rpa.html" style="display: block;color: white;text-align: center;padding: 16px;text-decoration: none;">Robotic Process Automation</a></li>
-           <li style="float: left;padding-top: 3px;font-size: 20px;"><a href="arvr.html" style="display: block;color: white;text-align: center;padding: 16px;text-decoration: none;">Augmented Reality and Virtula Reality</a></li>
-        </ul>
-    </strong>
+    <div class="navbar">
+        <a href="index.html"><img src="Images/hm.jpg" style="width: 25px;" alt="home"></a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Artificial Intelegence
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Evolutionary computation</a>
+          <a href="#">Speech Processing</a>
+        </div>
+        </div>
+        <a href="rpa.html">Robotic Process Automation</a>
+        <a href="arvr.html">Augmented Reality and Virtual Reality</a>
+    </div>
     <h2>Artificial Intelligence(AI)</h2>
         <p>Artificial Intelligence, or AI, has already received a lot of buzz in the past decade, but it continues to be one of the new technology trends because of its notable effects on how we live, work and play are only in the early. <b>AI is already known</b> for its superiority in image and speech recognition, navigation apps, smartphone personal assistants, ride-sharing apps and so much more.</p>
         <p>Other than that AI will be used further to analyze interactions to determine underlying connections and insights, to help predict demand for services like hospitals enabling authorities to make better decisions about resource utilization, and to detect the changing patterns of customer behaviour by analyzing data in near real-time, driving revenues and enhancing personalized experiences.</p>
@@ -31,5 +54,17 @@
             <li>Machine Learning Engineer</li>
             <li>AI Architect</li>
         </ul>
+        <h2>Evolutionary computation</h2>
+    <p>Evolutionary computation is a sub-field of artificial intelligence (AI) and is used extensively in complex optimization problems and for continuous optimization. Evolutionary computation is used to solve problems that have too many variables for traditional algorithms. Computers performing evolutionary computing run such evolutionary algorithms as genetic algorithms, evolutionary programming, genetic programming and swarm intelligence models like ant colony optimization or particle swarm optimization.</p>
+    <p>In computer science, <b>evolutionary computation</b> evolutionary computation is a family of algorithms for global optimization inspired by biological evolution, and the subfield of artificial intelligence and soft computing studying these algorithms. In technical terms, they are a family of population-based trial and error problem solvers with a metaheuristic or stochastic optimization character.</p>
+    <p>In evolutionary computation, an initial set of candidate solutions is generated and iteratively updated. Each new generation is produced by stochastically removing less desired solutions, and introducing small random changes. In biological terminology, a population of solutions is subjected to natural selection (or artificial selection) and mutation. As a result, the population will gradually evolve to increase in fitness, in this case the chosen fitness function of the algorithm.</p>
+    <p>Evolutionary computation techniques can produce highly optimized solutions in a wide range of problem settings, making them popular in computer science. Many variants and extensions exist, suited to more specific families of problems and data structures. Evolutionary computation is also sometimes used in evolutionary biology as an in silico experimental procedure to study common aspects of general evolutionary processes.</p>
+    <p>Evolutionary Computation is a leading journal in its field. It provides an international forum for facilitating and enhancing the exchange of information among researchers involved in both the theoretical and practical aspects of computational systems drawing their inspiration from nature, with particular emphasis on evolutionary models of computation such as genetic algorithms, evolutionary strategies, classifier systems, evolutionary programming, and genetic programming. It welcomes articles from related fields such as swarm intelligence (e.g. Ant Colony Optimization and Particle Swarm Optimization), and other nature-inspired computation paradigms (e.g. Artificial Immune Systems). As well as publishing articles describing theoretical and/or experimental work, the journal also welcomes application-focused papers describing breakthrough results in an application domain or methodological papers where the specificities of the real-world problem led to significant algorithmic improvements that could possibly be generalized to other areas.</p>
+    <h2>Speech Processing</h2>
+    <p>Speech processing and NLP allow intelligent devices, such as smartphones, to interact with users via verbal language. Perhaps the most well-known example of speech recognition technology on a mobile device is Apple's voice-recognition service, Siri. Siri was the result of the Cognitive Assistant that Learns and Organizes (CALO) project within the Defense Advanced Research Projects Agency's (DARPA) Personalized Assistant that Learns (PAL) program – the largest AI project in United States history (SRI, 2015). The goal of the program was to design an AI personal assistant for use by the United States military (Bosker, 2013).</p>
+    <p>Speech processing engineers rely heavily on research into the complex sounds of speech (phonetics) and into the characterization of the higher-level “rules” by which those sounds are combined to transmit information (linguistics).</p>
+    <p><b>Speech processing</b> is the study of speech signals and the processing methods of signals. The signals are usually processed in a digital representation, so speech processing can be regarded as a special case of digital signal processing, applied to speech signals. Aspects of speech processing includes the acquisition, manipulation, storage, transfer and output of speech signals. The input is called speech recognition and the output is called speech synthesis.</p>
+    <p>Siri uses onboard microphones to detect speech (e.g., commands, questions, or dictations) and Automatic Speech Recognition (ASR) to transcribe it into text. The software then translates the transcribed text into “parsed text” and then evaluates it locally on the device. If the request cannot be handled on the device, Siri communicates with servers in the Cloud (web services) to help process the request. Once the command is executed (such as to perform an Internet search or provide directions to a restaurant), Siri presents the information and/or provides a verbal response back to the user. Siri also makes use of ML methods to adapt to the user's individual language usage and individual searches (preferences) and returns personalized results.</p>
+    <p>Other examples of speech processing programs that operate on mobile devices include Dragon Dictation (http://www.nuance.com/dragonmobileapps/) and Microsoft's Catana (for Windows mobile OS). IBM has also supported development of mobile apps that make use of its NLP system Watson (Hamm, 2014).</p>
 </body>
 </html>
